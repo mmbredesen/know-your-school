@@ -10,6 +10,10 @@ def index():
 def data():
     return render_template("data.html")
 
+@app.route("/school_safety", methods=["GET","POST"])
+def school_safety():
+    return render_template("school_safety.html")
+
 @app.route("/petitions")
 def petitions():
     return render_template("petitions.html")
