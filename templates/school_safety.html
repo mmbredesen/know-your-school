@@ -2,10 +2,49 @@
 <html>
     <head>
         <title>Know Your School: School Safety Report</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3/dist/instantsearch.min.css">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/school_safety.css') }}" />
+        <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3/dist/instantsearch.min.css">-->
+        <style>
+            body {
+                background-color: #f8f1e5;
+            }
+
+            h1{
+                text-align: center;
+                width: 50%;
+                margin: auto;
+                background-color: #f9ba32;
+                margin-bottom: 20px;
+            }
+
+            h2 {
+                text-align: center;
+            }
+
+            #summary {
+                background-color: #426e86;
+                width: 70%;
+                margin: auto;
+                padding: 40px;
+                color: white;
+            }
+
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+                padding: 5px;
+                margin: auto;
+                text-align: center;
+            }
+
+            th {
+                background-color: #f9ba32;
+            }
+        </style>
     </head>
     <body>
         <h1>2010 - 2016 School Safety Report</h1>
+        <div id="summary">
         <h2>Summary</h2>
         <p>
             This dataset contains information about all criminal 
@@ -15,6 +54,7 @@
             may contain multiple schools and a school may be in 
             multiple buildings.
         </p>
+        </div>
         <h2>Columns</h2>
         <table>
             <tr>
@@ -105,8 +145,5 @@
                 <td>The neighborhood of the building.</td>
             </tr>
         </table>
-        <div>
-            <input id="search-input">
-        </div>
     </body>
 </html>
