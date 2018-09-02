@@ -1,6 +1,11 @@
 from flask import Flask, render_template
+from algoliasearch import algoliasearch
+import json, urllib2
 
 app = Flask(__name__)
+
+client = algoliasearch.Client('E3Z5BWU5LE', 'f6f8da14853c3bdfa71fa1491c4ca78e')
+index = client.init_index('know-your-school')
 
 @app.route("/")
 def index():
