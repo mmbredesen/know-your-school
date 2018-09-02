@@ -2,20 +2,54 @@
 <html>
     <head>
         <title>Know Your School</title>
-        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/DataSheet.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='styles/DataSheet.css') }}">
+    <style type="text/css">
+h1{
+    color:#2f3131;
+    text-align: center;
+font-family: 'Lusitana', serif;
+    background-color: #f9ba32;
+}
+
+li{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+
+}
+.button {
+    background-color: #426e86; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+body{
+    background-color: #f8f1e5;
+}
+    </style>
     </head>
     <body>
         <h1>Datasets To Review</h1>
         <center>
 
             <form action="{{ url_for('school_safety') }}" method="post">
-                <button>Bourough Crimes</button>
+                <button class="button">Bourough Crimes</button>
             </form>
             <form action="{{ url_for('vadir') }}" method="post">
-                <button>Sexual Misdemeanors</button>
+                <button class="button">Sexual Misdemeanors</button>
             </form>
             <form action="{{ url_for('lead') }}" method="post">
-                <button>Safety Inspections</button>
+                <button class="button">Safety Inspections</button>
             </form>
 
     </center>
