@@ -2,19 +2,15 @@
 <html>
     <head>
         <title>Know Your School</title>
-        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/data.css') }}">
-	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="DataSheet.css">
     </head>
     <body>
-        <h2>Choose which dataset you'd like to view!</h2>
-        <form action="{{ url_for('school_safety') }}" method="post">
-            <button>2010 - 2016 School Safety Report</button>
-        </form>
-        <form action="{{ url_for('vadir') }}" method="post">
-            <button>2014 - 2015 VADIR Incidents-3</button>
-        </form>
-        <form action="{{ url_for('lead') }}" method="post">
-            <button>Lead Reporting Intensive Search</button>
-        </form>
+        <h1>Datasets To Review</h1>
+        <center>
+            <li><a href="">Bourough Crimes<a></li>
+            <li>Sexual Misdemeanors</li>
+            <li>Saftey Inspections</li>
+
+    </center>
     </body>
 </html>
