@@ -1,0 +1,66 @@
+.button {
+    background-color: #426e86; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.button1:hover {
+    background-color: #F8F1E5;
+    color: Black;
+}
+
+.button1 {
+    background-color: #426e86; 
+    color: black; 
+    border: 2px solid #426e86;
+}
+
+.button2:hover {
+    background-color: #F8F1E5;
+    color: Black;
+}
+
+.button2 {
+    background-color: #f9ba32; 
+    color: black; 
+    border: 2px solid #f9ba32;
+}
+
+.buttonlike{
+    border-radius: 8px;
+    background-color: #d24136; 
+    color: black; 
+    border: 2px solid #d24136;
+    margin-right: 200px;
+}
+
+.buttonlike:hover {
+    background-color: #F8F1E5;
+    color: Black;
+}
+
+.buttondislike{
+    border-radius: 8px;
+    background-color: #506d2f; 
+    color: black; 
+    border: 2px solid #506d2f;
+}
+
+.buttondislike:hover {
+    background-color: #F8F1E5;
+    color: Black;
+}
+ 
+a:link {color: black;}      /* unvisited link */
+       a:visited {color: black;}   /* visited link */
+       a:hover {color: black;}     /* mouse over link */
+       a:active {color: black;} 
