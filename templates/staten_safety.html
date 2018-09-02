@@ -1,19 +1,42 @@
 <!DOCTYPE html>
 <html>
     <head>
+            <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/BottomSheet.css') }}">
+            <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      
+      <!-- Optional theme -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+      
+      <!-- Latest compiled and minified JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+      
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      
         <title>Know Your School: Staten Island Safety Report</title>
-        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/BottomSheet.css') }}">
     </head>
     <body>
         <h1>Safety in Staten Island Schools</h1>
         <a class="staten" href="http://tinypic.com?ref=2e3u890" target="_blank"><img src="http://i65.tinypic.com/2e3u890.jpg" border="0" alt="Image and video hosting by TinyPic" width="1000"></a>
         <a class="staten" href="http://tinypic.com?ref=99jsif" target="_blank"><img src="http://i63.tinypic.com/99jsif.jpg" border="0" alt="Image and video hosting by TinyPic" width="500"></a>
         <a class="staten" href="http://tinypic.com?ref=6thab6" target="_blank"><img src="http://i64.tinypic.com/6thab6.jpg" border="0" alt="Image and video hosting by TinyPic"width="800"></a>
-        <form action="{{ url_for('contact') }}" method="post">
-            <button class="button button1">Contact</button>
-        </form>
-        <form action="{{ url_for('support') }}" method="post">
-            <button class="button button2">Support</button>
-        </form>
+        <div class="inline">
+                <button class="button buttondislike">
+                        <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+                </button>
+                <button class="button buttonlike">
+                        <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span>
+                </button>
+                <form action="{{ url_for('contact') }}" method="post">
+                    <button class="button button1">Contact</button>
+                </form>
+                <form action="{{ url_for('support') }}" method="post">
+                    <button class="button button2">Support</button>
+                </form>
+            </div>
     </body>
 </html>
