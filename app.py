@@ -19,6 +19,10 @@ def data():
 def school_safety():
     return render_template("school_safety.html")
 
+@app.route("/vadir", methods=["GET","POST"])
+def vadir():
+    return render_template("vadir.html")
+
 @app.route("/petitions")
 def petitions():
     return render_template("petitions.html")
