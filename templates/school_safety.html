@@ -32,6 +32,28 @@
             th {
                 background-color: #f9ba32;
             }
+            .button{
+    background-color: #426e86; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 8px;
+            }
+            .buttonwork{
+    background-color: #426e86; 
+    color: black; 
+    border: 2px solid #426e86;
+    margin-top: 20px;
+}
+
         </style>
     </head>
     <body>
@@ -136,21 +158,23 @@
                 <td>NTA</td>
                 <td>The neighborhood of the building.</td>
             </tr>
-        </table>
+        </table>.
+        <div class="inline"><center>
         <form action="{{ url_for('manhattan_safety') }}" method="post">
-            <button>Study Data From Manhattan</button>
+            <button class="button buttonwork">Study Data From Manhattan</button>
         </form>
         <form action="{{ url_for('brooklyn_safety') }}" method="post">
-            <button>Study Data From Brooklyn</button>
+            <button class="button buttonwork">Study Data From Brooklyn</button>
         </form>
         <form action="{{ url_for('bronx_safety') }}" method="post">
-            <button>Study Data From Bronx</button>
+            <button class="button buttonwork">Study Data From Bronx</button>
         </form>
         <form action="{{ url_for('queens_safety') }}" method="post">
-            <button>Study Data From Queens</button>
+            <button class="button buttonwork">Study Data From Queens</button>
         </form>
         <form action="{{ url_for('staten_safety') }}" method="post">
-            <button>Study Data From Staten Island</button>
-        </form>
+            <button class="button buttonwork">Study Data From Staten Island</button>
+        </form></center>
+        </div>
     </body>
 </html>
