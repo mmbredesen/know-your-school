@@ -23,6 +23,10 @@ def school_safety():
 def vadir():
     return render_template("vadir.html")
 
+@app.route("/lead", methods=["GET","POST"])
+def lead():
+    return render_template("lead.html")
+
 @app.route("/petitions")
 def petitions():
     return render_template("petitions.html")
