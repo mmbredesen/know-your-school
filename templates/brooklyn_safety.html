@@ -2,16 +2,19 @@
 <html>
     <head>
         <title>Know Your School: Brooklyn Safety Report</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/BottomSheet.css') }}">
     </head>
     <body>
         <h1>Safety in Brooklyn Schools</h1>
         <a class="brooklyn" href="http://tinypic.com?ref=xanpe" target="_blank"><img src="http://i68.tinypic.com/xanpe.jpg" border="0" alt="Image and video hosting by TinyPic" width="1000"></a>
         <a class="brooklyn" href="http://tinypic.com?ref=2z69rpw" target="_blank"><img src="http://i68.tinypic.com/2z69rpw.jpg" border="0" alt="Image and video hosting by TinyPic" width="800"></a>
+        <center>
         <form action="{{ url_for('contact') }}" method="post">
             <button class="button button1">Contact</button>
         </form>
         <form action="{{ url_for('support') }}" method="post">
-            <button class="button button1">Support</button>
+            <button class="button buttonlike">Support</button>
         </form>
+        </center>
     </body>
 </html>
