@@ -47,9 +47,13 @@ def vadir():
 def lead():
     return render_template("lead.html")
 
-@app.route("/petitions")
-def petitions():
-    return render_template("petitions.html")
+@app.route("/contact", methods=["GET","POST"])
+def contact():
+    return render_template("Contact.html")
+
+@app.route("/support", methods=["GET","POST"])
+def support():
+    return render_template("Support.html")
 
 if __name__ == "__main__":
     app.run()
