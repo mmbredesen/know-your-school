@@ -19,6 +19,26 @@ def data():
 def school_safety():
     return render_template("school_safety.html")
 
+@app.route("/school_safety/manhattan", methods=["GET","POST"])
+def manhattan_safety():
+    return render_template("manhattan_safety.html")
+
+@app.route("/school_safety/brooklyn", methods=["GET","POST"])
+def brooklyn_safety():
+    return render_template("brooklyn_safety.html")
+
+@app.route("/school_safety/bronx", methods=["GET","POST"])
+def bronx_safety():
+    return render_template("bronx_safety.html")
+
+@app.route("/school_safety/queens", methods=["GET","POST"])
+def queens_safety():
+    return render_template("queens_safety.html")
+
+@app.route("/school_safety/staten", methods=["GET","POST"])
+def staten_safety():
+    return render_template("staten_safety.html")
+
 @app.route("/vadir", methods=["GET","POST"])
 def vadir():
     return render_template("vadir.html")
