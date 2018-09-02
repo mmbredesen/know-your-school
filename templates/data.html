@@ -2,9 +2,11 @@
 <html>
     <head>
         <title>Know Your School</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/data.css') }}">
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <p>Choose which dataset you'd like to view!</p>
+        <h2>Choose which dataset you'd like to view!</h2>
         <form action="{{ url_for('school_safety') }}" method="post">
             <button>2010 - 2016 School Safety Report</button>
         </form>

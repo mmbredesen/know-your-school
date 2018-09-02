@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/StyleSheet.css') }}">
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/
 	font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Lusitana" rel="stylesheet">
@@ -21,9 +21,7 @@
 		</center>
 				<p id="intro">Know Your School is a platfrom created by students who want open source New York data to become more accessible to <br>the public. Know Your School aims to inform communities and engage them with the education system <br>through data on safety and violence in schools.</p>
 			<center>
-                <form action="{{ url_for('data') }}">
-                    <button class="button databutton">Data</button>
-                </form>
+				<button class="button databutton">Data</button>
 			</center>
 
 	</body>
